@@ -1,5 +1,5 @@
 ---
-title: API Reference
+title: 14. API Reference
 publish: true
 description: Complete API reference for all Hyperclay attributes, methods, utilities, and custom DOM extensions
 ---

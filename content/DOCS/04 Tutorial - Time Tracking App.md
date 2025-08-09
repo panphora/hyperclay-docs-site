@@ -1,5 +1,5 @@
 ---
-title: Tutorial - Time Tracking App
+title: 04. Tutorial - Time Tracking App
 publish: true
 description: Build a real-world time tracking app with Hyperclay - a practical tutorial based on an actual contractor hours tracking solution
 ---

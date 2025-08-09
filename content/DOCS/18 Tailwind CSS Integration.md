@@ -1,5 +1,5 @@
 ---
-title: Tailwind CSS Integration
+title: 18. Tailwind CSS Integration
 publish: true
 description: Guide to using Tailwind CSS with Hyperclay via Play CDN for building beautiful, responsive interfaces without a build process
 ---

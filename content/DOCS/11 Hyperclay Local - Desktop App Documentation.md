@@ -1,5 +1,5 @@
 ---
-title: Hyperclay Local - Desktop App Documentation
+title: 11. Hyperclay Local - Desktop App Documentation
 publish: true
 description: Documentation for Hyperclay Local, a desktop application for running and developing HTML apps locally on your computer
 ---

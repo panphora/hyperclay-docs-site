@@ -1,5 +1,5 @@
 ---
-title: Utilities
+title: 10. Utilities
 publish: true
 description: Powerful utilities and helper functions that make building Hyperclay HTML apps intuitive and efficient
 ---

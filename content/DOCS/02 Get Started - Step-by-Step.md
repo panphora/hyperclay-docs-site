@@ -1,5 +1,5 @@
 ---
-title: Get Started - Step-by-Step
+title: 02. Get Started - Step-by-Step
 publish: true
 description: A step-by-step guide to building your first self-modifying HTML app with Hyperclay in minutes
 ---

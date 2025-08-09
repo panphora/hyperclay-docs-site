@@ -1,5 +1,5 @@
 ---
-title: Example Apps
+title: 06. Example Apps
 publish: true
 description: Collection of simple Hyperclay example applications demonstrating core concepts in under 30 lines of HTML each
 ---

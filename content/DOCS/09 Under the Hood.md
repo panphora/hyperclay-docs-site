@@ -1,5 +1,5 @@
 ---
-title: Under the Hood
+title: 09. Under the Hood
 publish: true
 description: Technical deep dive into Hyperclay's architecture and how it enables self-modifying HTML documents
 ---

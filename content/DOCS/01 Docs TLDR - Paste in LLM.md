@@ -1,5 +1,5 @@
 ---
-title: Docs TLDR - Paste in LLM
+title: 01. Docs TLDR - Paste in LLM
 publish: true
 description: A comprehensive guide to building HTML apps on Hyperclay platform, designed to be pasted into LLMs for generating robust HTML applications
 ---

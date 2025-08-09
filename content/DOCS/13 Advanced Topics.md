@@ -1,5 +1,5 @@
 ---
-title: Advanced Topics
+title: 13. Advanced Topics
 publish: true
 description: Advanced techniques and patterns for building sophisticated multi-page, data-driven Hyperclay applications
 ---

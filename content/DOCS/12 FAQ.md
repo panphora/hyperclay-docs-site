@@ -1,5 +1,5 @@
 ---
-title: FAQ
+title: 12. FAQ
 publish: true
 description: Frequently asked questions about Hyperclay, covering core concepts, capabilities, and common use cases
 ---

@@ -1,5 +1,5 @@
 ---
-title: Thinking in Hyperclay
+title: 05. Thinking in Hyperclay
 publish: true
 description: A guide to shifting your mindset from traditional web development to building portable, dynamic HTML documents with Hyperclay
 ---

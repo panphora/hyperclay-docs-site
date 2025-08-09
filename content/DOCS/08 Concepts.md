@@ -1,5 +1,5 @@
 ---
-title: Concepts
+title: 08. Concepts
 publish: true
 description: Core concepts of Hyperclay including DOM as database, save lifecycle, view modes, and event handling fundamentals
 ---

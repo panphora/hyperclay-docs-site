@@ -1,5 +1,5 @@
 ---
-title: How Hyperclay Works
+title: 03. How Hyperclay Works
 publish: true
 description: Understanding the core concept behind Hyperclay - a platform for hosting self-modifying HTML pages that act as both frontend and database
 ---

@@ -1,5 +1,5 @@
 ---
-title: Multi-Tenant Platforms
+title: 15. Multi-Tenant Platforms
 publish: true
 description: Build SaaS platforms and multi-user applications with Hyperclay, enabling multiple users to have their own app instances
 ---

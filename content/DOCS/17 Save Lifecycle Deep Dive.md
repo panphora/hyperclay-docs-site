@@ -1,5 +1,5 @@
 ---
-title: Save Lifecycle Deep Dive
+title: 17. Save Lifecycle Deep Dive
 publish: true
 description: In-depth exploration of Hyperclay's save lifecycle, including triggers, control patterns, and onbeforesave event handling
 ---

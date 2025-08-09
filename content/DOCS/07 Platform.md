@@ -1,5 +1,5 @@
 ---
-title: Platform
+title: 07. Platform
 publish: true
 description: Overview of Hyperclay platform features including code editor, version control, custom domains, and hosting capabilities
 ---
