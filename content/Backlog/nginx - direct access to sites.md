@@ -1,0 +1,1 @@
+configure so that loading a site from hyperspace OR a custom domain accesses the HTML of that site directly instead of going through the Node.js server

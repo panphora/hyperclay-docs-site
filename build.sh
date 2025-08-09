@@ -1,7 +1,14 @@
 #!/bin/bash
 
-# Clean existing content
+# Clean existing content (but preserve index.md)
+if [ -f content/index.md ]; then
+    cp content/index.md /tmp/index.md.backup
+fi
 rm -rf content/*
+if [ -f /tmp/index.md.backup ]; then
+    cp /tmp/index.md.backup content/index.md
+    rm /tmp/index.md.backup
+fi
 
 # Copy main markdown files from hyperclay-docs root
 cp ../hyperclay-docs/*.md content/ 2>/dev/null || true

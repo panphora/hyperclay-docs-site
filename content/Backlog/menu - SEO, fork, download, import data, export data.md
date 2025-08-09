@@ -1,0 +1,2 @@
+
+https://hyperclay.com/import?from=x&to=y&data_format=data_format=(sites:[.site,(site_name:.site-link,site_href:.site-link@href,menu_view_site:.menu-view-site@href,menu_edit_site_code:.menu-edit-site-code@href,menu_copy_site:.menu-copy-site@href,menu_site_versions:.menu-site-versions@href,menu_remove_site:.menu-remove-site@href)])

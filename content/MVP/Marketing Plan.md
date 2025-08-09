@@ -1,0 +1,1 @@
+Build HTML apps for people who need them (for free) and document the process

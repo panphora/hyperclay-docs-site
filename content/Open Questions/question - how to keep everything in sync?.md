@@ -1,0 +1,1 @@
+if i update a script, how do i deploy that across all relevant pages without breaking them?

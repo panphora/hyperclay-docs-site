@@ -1,0 +1,15 @@
+HTML, a guide — free ebook (marketing for All.js and my way of thinking of the DOM as a state machine that can be treated as a front-end, events-and-data-flows-through-in-one-direction database)
+- DOM
+- love of DOM
+- tree thinking
+- up and down the tree
+- clicking and input events
+- seeing the DOM as state
+- things the DOM needs patched
+- JSON, the DOM, and FORMS
+- how it all fits together
+- jQuery and what it did (accessible DOM, understandable AJAX)
+- what if it all fit in your head? possible? yes
+- let's do this
+- things get easier/better from here
+- this story is not complete

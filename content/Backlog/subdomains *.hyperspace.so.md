@@ -1,0 +1,1 @@
+every site is accessible at SITE.hyperspace.so
