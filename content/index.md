@@ -1,5 +1,6 @@
 ---
 title: Hyperclay Documentation
+publish: true
 ---
 
 # Welcome to Hyperclay
