@@ -131,8 +131,8 @@ Edit `quartz.config.ts` to customize:
 - `public/` folder is gitignored (build output)
 - Only commit Quartz configuration and customizations
 
-### Folder Naming
-Special characters in folder names (like Ω) are automatically renamed during build to ensure compatibility.
+### Folder Structure
+All folder names are preserved exactly as they appear in the source, including special characters like Ω.
 
 ### Updates
 To update Quartz itself:

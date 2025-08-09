@@ -17,26 +17,24 @@ if [ -d "../hyperclay-docs" ]; then
         rm /tmp/index.md.backup
     fi
     
-    # Copy main markdown files from hyperclay-docs root
+    # Copy all content from hyperclay-docs, preserving folder names and structure exactly
+    # Copy root markdown files
     cp ../hyperclay-docs/*.md content/ 2>/dev/null || true
     
-    # Copy DOCS folder
+    # Copy publish.css and publish.js if they exist  
+    cp ../hyperclay-docs/publish.* content/ 2>/dev/null || true
+    
+    # Copy all directories preserving their exact names (including Ω)
     cp -r ../hyperclay-docs/DOCS content/ 2>/dev/null || true
-    
-    # Copy MVP folder
     cp -r ../hyperclay-docs/MVP content/ 2>/dev/null || true
-    
-    # Copy assets folder (renamed to remove special character)
-    cp -r "../hyperclay-docs/Ω Assets" "content/Assets" 2>/dev/null || true
-    
-    # Copy other Ω folders (renaming to remove special character)
-    cp -r "../hyperclay-docs/Ω Backlog" "content/Backlog" 2>/dev/null || true
-    cp -r "../hyperclay-docs/Ω Blog post ideas" "content/Blog post ideas" 2>/dev/null || true
-    cp -r "../hyperclay-docs/Ω HTML App Ideas" "content/HTML App Ideas" 2>/dev/null || true
-    cp -r "../hyperclay-docs/Ω Launch plan" "content/Launch plan" 2>/dev/null || true
-    cp -r "../hyperclay-docs/Ω Nope" "content/Nope" 2>/dev/null || true
-    cp -r "../hyperclay-docs/Ω Open Questions" "content/Open Questions" 2>/dev/null || true
-    cp -r "../hyperclay-docs/Ω Server" "content/Server" 2>/dev/null || true
+    cp -r "../hyperclay-docs/Ω Assets" content/ 2>/dev/null || true
+    cp -r "../hyperclay-docs/Ω Backlog" content/ 2>/dev/null || true
+    cp -r "../hyperclay-docs/Ω Blog post ideas" content/ 2>/dev/null || true
+    cp -r "../hyperclay-docs/Ω HTML App Ideas" content/ 2>/dev/null || true
+    cp -r "../hyperclay-docs/Ω Launch plan" content/ 2>/dev/null || true
+    cp -r "../hyperclay-docs/Ω Nope" content/ 2>/dev/null || true
+    cp -r "../hyperclay-docs/Ω Open Questions" content/ 2>/dev/null || true
+    cp -r "../hyperclay-docs/Ω Server" content/ 2>/dev/null || true
     
     echo "Content synced from ../hyperclay-docs"
 else
