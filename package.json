@@ -17,11 +17,14 @@
     "check": "tsc --noEmit && npx prettier . --check",
     "format": "npx prettier . --write",
     "test": "tsx --test",
-    "profile": "0x -D prof ./quartz/bootstrap-cli.mjs build --concurrency=1"
+    "profile": "0x -D prof ./quartz/bootstrap-cli.mjs build --concurrency=1",
+    "build:cf": "npx quartz build",
+    "build:local": "./build.sh",
+    "serve": "npx quartz build --serve"
   },
   "engines": {
-    "npm": ">=10.9.2",
-    "node": ">=22"
+    "npm": ">=9.0.0",
+    "node": ">=18"
   },
   "keywords": [
     "site generator",

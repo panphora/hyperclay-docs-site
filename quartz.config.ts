@@ -8,16 +8,25 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "Hyperclay Documentation",
-    pageTitleSuffix: " | Hyperclay",
+    pageTitle: "Hyperclay Docs",
+    pageTitleSuffix: "",
     enableSPA: true,
     enablePopovers: true,
     analytics: {
       provider: "plausible",
     },
     locale: "en-US",
-    baseUrl: "panphora.github.io/hyperclay-docs-site",
-    ignorePatterns: ["private", "templates", ".obsidian"],
+    baseUrl: "docs.hyperclay.com",
+    ignorePatterns: [
+      "private", 
+      "templates", 
+      ".obsidian",
+      "**/.obsidian/**",
+      "**/.git/**",
+      "**/node_modules/**",
+      "**/.DS_Store",
+      "**/*.excalidraw.md"
+    ],
     defaultDateType: "modified",
     theme: {
       fontOrigin: "googleFonts",
