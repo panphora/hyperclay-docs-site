@@ -71,7 +71,7 @@ The `build.sh` script:
    - Select `hyperclay-docs-site` repository
 
 2. **Configure Build Settings**
-   - **Build command**: `npm run build:cf`
+   - **Build command**: `npm run build`
    - **Build output directory**: `public`
    - **Root directory**: `/` (leave as default)
    - **Node.js version**: `18` or higher
@@ -86,8 +86,8 @@ The `build.sh` script:
 ### Build Configuration
 
 The site uses these build settings (defined in package.json):
-- **Production build**: `npm run build:cf` (for Cloudflare)
-- **Local build**: `./build.sh` (copies docs first)
+- **Production build**: `npm run build` (for Cloudflare Pages)
+- **Local build with sync**: `npm run build:local` (copies docs from ../hyperclay-docs first)
 
 ### Deployment Process
 

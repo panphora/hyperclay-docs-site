@@ -18,7 +18,7 @@
     "format": "npx prettier . --write",
     "test": "tsx --test",
     "profile": "0x -D prof ./quartz/bootstrap-cli.mjs build --concurrency=1",
-    "build:cf": "npx quartz build",
+    "build": "npx quartz build",
     "build:local": "./build.sh",
     "serve": "npx quartz build --serve"
   },
