@@ -38,26 +38,26 @@ const config: QuartzConfig = {
       },
       colors: {
         lightMode: {
-          light: "#faf8f8",
-          lightgray: "#e5e5e5",
-          gray: "#b8b8b8",
-          darkgray: "#4e4e4e",
-          dark: "#2b2b2b",
-          secondary: "#284b63",
-          tertiary: "#84a59d",
-          highlight: "rgba(143, 159, 169, 0.15)",
-          textHighlight: "#fff23688",
+          light: "#d5d6db",  // --bg from your light theme
+          lightgray: "#cbccd1",  // --bg_dark
+          gray: "#9699a3",  // --comment
+          darkgray: "#343b58",  // --fg
+          dark: "#272e4b",  // --fg_dark
+          secondary: "#0f4b6e",  // --cyan (accent)
+          tertiary: "#34548a",  // --blue
+          highlight: "rgba(220, 222, 226, 0.5)",  // --bg_highlight
+          textHighlight: "#7dcfff44",
         },
         darkMode: {
-          light: "#161618",
-          lightgray: "#393639",
-          gray: "#646464",
-          darkgray: "#d4d4d4",
-          dark: "#ebebec",
-          secondary: "#7b97aa",
-          tertiary: "#84a59d",
-          highlight: "rgba(143, 159, 169, 0.15)",
-          textHighlight: "#b3aa0288",
+          light: "#1a1b26",  // --bg from your dark theme
+          lightgray: "#292e42",  // --bg_highlight_dark
+          gray: "#565f89",  // --comment
+          darkgray: "#a9b1d6",  // --fg_dark
+          dark: "#ebeeffc",  // --fg
+          secondary: "#7dcfff",  // --cyan (accent)
+          tertiary: "#bb9af7",  // --magenta
+          highlight: "rgba(41, 46, 66, 0.5)",  // --bg_highlight
+          textHighlight: "#7dcfff44",
         },
       },
     },

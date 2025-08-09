@@ -1,3 +1,75 @@
 @use "./base.scss";
 
-// put your custom CSS here!
+// Custom theme inspired by Obsidian Publish theme
+:root {
+  // Make everything use monospace
+  --bodyFont: "JetBrains Mono", monospace;
+  --headerFont: "JetBrains Mono", monospace;
+  --codeFont: "JetBrains Mono", monospace;
+}
+
+// Enhance dark mode colors
+.dark {
+  // Tokyo Night inspired colors
+  --light: #1a1b26;
+  --lightgray: #24283b;
+  --gray: #565f89;
+  --darkgray: #a9b1d6;
+  --dark: #c0caf5;
+  --secondary: #7dcfff;  // Cyan accent
+  --tertiary: #bb9af7;   // Magenta
+  --highlight: rgba(125, 207, 255, 0.1);
+  
+  // Better code block colors
+  .syntax-highlighting {
+    background: #16161e !important;
+  }
+}
+
+// Enhance light mode
+.light {
+  --light: #d5d6db;
+  --lightgray: #cbccd1;
+  --gray: #787c99;
+  --darkgray: #343b58;
+  --dark: #1a1e2e;
+  --secondary: #0969da;
+  --tertiary: #6639ba;
+}
+
+// Make links more prominent
+a {
+  font-weight: 500;
+  text-decoration: none;
+  
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+// Better code blocks
+pre {
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+}
+
+// Improve sidebar styling
+.explorer {
+  font-size: 0.9rem;
+  
+  .folder-button {
+    font-weight: 600;
+  }
+}
+
+// Better article titles
+article > h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+// Improve content spacing
+.center > article {
+  line-height: 1.7;
+}

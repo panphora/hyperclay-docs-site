@@ -38,37 +38,7 @@ export const defaultContentPageLayout: PageLayout = {
         { Component: Component.ReaderMode() },
       ],
     }),
-    Component.Explorer({
-      sortFn: (a, b) => {
-        // For numeric-prefixed files (like "01 Title", "02 Title"), extract the number
-        const getNumericPrefix = (node) => {
-          const name = node.displayName || node.slugSegment || ""
-          const match = name.match(/^(\d+)\s/)
-          return match ? parseInt(match[1]) : null
-        }
-        
-        const aNum = getNumericPrefix(a)
-        const bNum = getNumericPrefix(b)
-        
-        // If both have numeric prefixes, sort by number
-        if (aNum !== null && bNum !== null) {
-          return aNum - bNum
-        }
-        
-        // If only one has a numeric prefix, it comes first
-        if (aNum !== null) return -1
-        if (bNum !== null) return 1
-        
-        // Default sorting: folders first, then alphabetical
-        if ((!a.isFolder && !b.isFolder) || (a.isFolder && b.isFolder)) {
-          return a.displayName.localeCompare(b.displayName, undefined, {
-            numeric: true,
-            sensitivity: "base",
-          })
-        }
-        return !a.isFolder && b.isFolder ? 1 : -1
-      },
-    }),
+    Component.Explorer(),
   ],
   right: [
     Component.Graph(),
@@ -92,37 +62,7 @@ export const defaultListPageLayout: PageLayout = {
         { Component: Component.Darkmode() },
       ],
     }),
-    Component.Explorer({
-      sortFn: (a, b) => {
-        // For numeric-prefixed files (like "01 Title", "02 Title"), extract the number
-        const getNumericPrefix = (node) => {
-          const name = node.displayName || node.slugSegment || ""
-          const match = name.match(/^(\d+)\s/)
-          return match ? parseInt(match[1]) : null
-        }
-        
-        const aNum = getNumericPrefix(a)
-        const bNum = getNumericPrefix(b)
-        
-        // If both have numeric prefixes, sort by number
-        if (aNum !== null && bNum !== null) {
-          return aNum - bNum
-        }
-        
-        // If only one has a numeric prefix, it comes first
-        if (aNum !== null) return -1
-        if (bNum !== null) return 1
-        
-        // Default sorting: folders first, then alphabetical
-        if ((!a.isFolder && !b.isFolder) || (a.isFolder && b.isFolder)) {
-          return a.displayName.localeCompare(b.displayName, undefined, {
-            numeric: true,
-            sensitivity: "base",
-          })
-        }
-        return !a.isFolder && b.isFolder ? 1 : -1
-      },
-    }),
+    Component.Explorer(),
   ],
   right: [],
 }
