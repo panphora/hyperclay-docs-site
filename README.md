@@ -8,8 +8,8 @@ This repository contains the Quartz 4 setup for building the Hyperclay documenta
 hyper/
 ├── hyperclay-docs/        # Obsidian vault with source documentation
 └── hyperclay-site/        # This repo - Quartz 4 site generator
-    ├── build.sh           # Script to copy docs and build site
-    ├── content/           # Generated from hyperclay-docs (gitignored)
+    ├── build-smart.sh     # Smart build script (auto-detects environment)
+    ├── content/           # Documentation content
     ├── public/            # Built static site (gitignored)
     └── quartz.config.ts   # Site configuration
 ```
@@ -32,8 +32,8 @@ cd hyperclay-docs-site
 # Install dependencies
 npm install
 
-# Build the site (copies docs from ../hyperclay-docs and builds)
-./build.sh
+# Build the site (auto-syncs from ../hyperclay-docs if available)
+npm run build
 ```
 
 ### Local Development
@@ -48,17 +48,17 @@ npx quartz build --serve
 ## 🔄 Development Workflow
 
 1. **Edit documentation** in the `../hyperclay-docs/` Obsidian vault
-2. **Build the site** with `./build.sh` 
+2. **Build the site** with `npm run build` (auto-syncs changes)
 3. **Preview locally** at http://localhost:8080
 4. **Commit and push** changes to trigger deployment
 
 ## 📦 Build Process
 
-The `build.sh` script:
-1. Clears the `content/` directory
-2. Copies all markdown files from `../hyperclay-docs/`
-3. Renames folders with special characters (Ω → removed)
-4. Runs `npx quartz build` to generate static site in `public/`
+The `npm run build` command uses a smart build script that:
+1. **Detects environment** - Checks if `../hyperclay-docs` exists
+2. **Local mode** - If docs exist, syncs content from `../hyperclay-docs/`
+3. **Production mode** - If no local docs, builds from existing `content/`
+4. **Builds site** - Runs Quartz to generate static site in `public/`
 
 ## ☁️ Cloudflare Pages Deployment
 
@@ -85,9 +85,8 @@ The `build.sh` script:
 
 ### Build Configuration
 
-The site uses these build settings (defined in package.json):
-- **Production build**: `npm run build` (for Cloudflare Pages)
-- **Local build with sync**: `npm run build:local` (copies docs from ../hyperclay-docs first)
+The site uses a single, unified build command:
+- **`npm run build`** - Works everywhere (auto-detects local vs production)
 
 ### Deployment Process
 
@@ -98,8 +97,8 @@ The site uses these build settings (defined in package.json):
 
 **Manual Deployment**:
 ```bash
-# Build locally
-./build.sh
+# Build and sync from local docs
+npm run build
 
 # Commit changes
 git add -A
@@ -154,14 +153,14 @@ npm update
 
 ### Content Not Updating
 - Make sure `hyperclay-docs` is in the correct location (`../hyperclay-docs`)
-- Run `./build.sh` to copy latest content
+- Run `npm run build` to sync latest content
 - Clear browser cache if changes don't appear
 
 ### Local Development Issues
 ```bash
 # Clean build
-rm -rf content/* public/*
-./build.sh
+rm -rf public/*
+npm run build
 
 # Reinstall dependencies
 rm -rf node_modules package-lock.json

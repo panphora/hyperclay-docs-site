@@ -1,6 +1,6 @@
 ---
 title: Hacker's Manual Feedback
-publish: true
+publish: false
 description: Editorial feedback and improvement notes for refining the Hacker's Manual documentation
 ---
 
